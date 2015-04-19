@@ -74,7 +74,8 @@ echo "It's going to got fe package"
 echo "**********************************************"
 
 cd html
-python build.py
+#python build.py
+sh build.sh
 
 #
 cd $current_path
