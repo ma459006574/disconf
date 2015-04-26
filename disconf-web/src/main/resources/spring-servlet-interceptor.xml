@@ -28,6 +28,12 @@
                         <value>/api/zoo/prefix</value>
                         <value>/api/config/item</value>
                         <value>/api/config/file</value>
+                        <value>.html</value>
+                        <value>/assets/</value>
+                        <value>/dep/</value>
+                        <value>/mainTpl/</value>
+                        <value>/output/</value>
+                        <value>/unitTpl/</value>
                     </list>
                 </property>
                 <property name="XONE_COOKIE_DOMAIN_STRING">

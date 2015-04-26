@@ -12,7 +12,7 @@
            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
-    <context:property-placeholder location="classpath*:/application-demo.properties"
+    <context:property-placeholder location="classpath*:/application.properties"
                                   ignore-unresolvable="true"/>
 
     <bean id="handlerAdapter"
@@ -149,6 +149,18 @@
     </bean>
 
     <mvc:resources mapping="/api/system/**" location="/WEB-INF/public-resources/"
+                   cache-period="259200"/>
+    <mvc:resources mapping="**.html" location="/"
+                   cache-period="259200"/>
+    <mvc:resources mapping="/assets/**" location="/assets/"
+                   cache-period="259200"/>
+    <mvc:resources mapping="/dep/**" location="/dep/"
+                   cache-period="259200"/>
+    <mvc:resources mapping="/mainTpl/**" location="/mainTpl/"
+                   cache-period="259200"/>
+    <mvc:resources mapping="/output/**" location="/output/"
+                   cache-period="259200"/>
+    <mvc:resources mapping="/unitTpl/**" location="/unitTpl/"
                    cache-period="259200"/>
 
 </beans>
