@@ -2,11 +2,11 @@ package com.baidu.disconf.web.service.app.form;
 
 import javax.validation.constraints.NotNull;
 
-import lombok.Data;
-
 import org.hibernate.validator.constraints.NotEmpty;
 
 import com.baidu.dsp.common.form.RequestFormBase;
+
+import lombok.Data;
 
 /**
  * @author liaoqiqi
